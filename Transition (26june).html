@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Transition Box Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e6e6e6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .box {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 16px;
+      border: 2px solid black; /* 🔲 Black border added */
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 400px;
+    }
+
+    h1 {
+      color: #333;
+      transition: color 1s ease;
+    }
+
+    h1:hover {
+      color: #0077ff;
+    }
+
+    p {
+      font-size: 18px;
+      color: #555;
+      transition: font-size 1s ease, color 1s ease;
+      margin: 20px 0;
+    }
+
+    p:hover {
+      font-size: 22px;
+      color: #000;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #0077ff;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.5s ease, transform 0.5s ease;
+    }
+
+    .button:hover {
+      background-color: #0055cc;
+      transform: scale(1.1);
+    }
+
+    .button:active {
+      background-color: #003399;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <h1>Welcome to the Transition Demo</h1>
+
+    <p>Hover over this paragraph to see smooth font-size and color transitions in action.</p>
+
+    <div class="button">Hover Me!</div>
+  </div>
+
+</body>
+</html>
