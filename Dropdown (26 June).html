@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown Example</title>
+  <style>
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-button {
+      padding: 10px 20px;
+      background-color: #e0e0e0;
+      border: 1px solid #888;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .dropdown-items {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: white;
+      min-width: 150px;
+      border: 1px solid #ccc;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    .dropdown-items button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background: none;
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .dropdown-items button:hover {
+      background-color: #f0f0f0;
+    }
+
+    .dropdown:hover .dropdown-items {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="dropdown">
+    <button class="dropdown-button">Drop Down Button</button>
+    <div class="dropdown-items">
+      <button>Item 1</button>
+      <button>Item 2</button>
+      <button>Item 3</button>
+      <button>Item 4</button>
+    </div>
+  </div>
+
+</body>
+</html>
