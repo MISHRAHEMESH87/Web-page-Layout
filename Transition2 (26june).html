@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box and Ball Transition</title>
+  <style>
+    body {
+      background: #f0f0f0;
+      display: flex;
+      justify-content: left;
+      align-items: unsafe;
+      height: 100vh;
+      margin: 0;
+    }
+    .outer-box {
+      width: 140px;
+      height: 100px;
+      background: #ffffff;
+      border: 2px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.5s ease-in-out;
+    }
+    
+        .ball {
+      width: 50px;
+      height: 50px;
+      background: #c01515;
+      border: 2px solid black;
+      border-radius: 50%;
+      transition: all 0.5s ease-in-out;
+    }
+    .outer-box:hover {
+      width: 200px;
+      height: 200px;
+    }
+   
+       .outer-box .ball {
+      width: 30px;
+      height: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="outer-box">
+    <div class="inner-box">
+      <div class="ball"></div>
+    </div>
+  </div>
+</body>
+</html>
